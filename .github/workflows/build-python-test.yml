@@ -26,7 +26,7 @@ jobs:
         file: ./python/Dockerfile  # Explicitly specify the Dockerfile location
         platforms: linux/amd64,linux/arm64
         push: true
-        tags: ghcr.io/${{ github.repository }}-fastapi:latest
+        tags: ghcr.io/rt-trade-and-risk-fastapi:latest
 
     - name: Log out from GitHub Container Registry
       run: docker logout ghcr.io
